@@ -1,6 +1,7 @@
 package com.slimesarecool.sacred;
 
 import com.mojang.logging.LogUtils;
+import com.slimesarecool.sacred.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -33,6 +34,8 @@ public class SacredSorcery {
 
     public SacredSorcery() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
