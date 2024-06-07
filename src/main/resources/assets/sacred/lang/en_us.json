@@ -1,4 +1,7 @@
 {
+  "itemGroup.sacred_tab": "Sacred",
+
+  "item.sacred.sacred_essence": "Sacred Essence",
   "item.sacred.sacred_dust": "Sacred Dust",
-  "item.sacred.static_sacred_dust": "Static Sacred Dust"
+  "item.sacred.sacred_serum": "Sacred Serum"
 }

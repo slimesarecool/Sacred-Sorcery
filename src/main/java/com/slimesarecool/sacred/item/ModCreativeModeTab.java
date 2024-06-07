@@ -7,7 +7,7 @@ public class ModCreativeModeTab {
     public static final CreativeModeTab SACRED_TAB = new CreativeModeTab("sacred_tab") {
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(ModItems.STATIC_SACRED_DUST.get());
+            return new ItemStack(ModItems.SACRED_DUST.get());
         }
     };
 }

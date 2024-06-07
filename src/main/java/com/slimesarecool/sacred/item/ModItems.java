@@ -10,8 +10,9 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, SacredSorcery.MODID);
 
+    public static final RegistryObject<Item> SACRED_ESSENCE = ITEMS.register("sacred_essence", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SACRED_TAB)));
     public static final RegistryObject<Item> SACRED_DUST = ITEMS.register("sacred_dust", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SACRED_TAB)));
-    public static final RegistryObject<Item> STATIC_SACRED_DUST = ITEMS.register("static_sacred_dust", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SACRED_SERUM = ITEMS.register("sacred_serum", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SACRED_TAB)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
